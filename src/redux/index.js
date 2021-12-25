@@ -1,7 +1,10 @@
 import { applyMiddleware, combineReducers, createStore } from 'redux'
 import stateGame from './ducks/reducerGame'
-import logger from 'redux-logger'
-
+import { createLogger } from 'redux-logger/src'
+const logger = createLogger({
+  diff: true,
+  collapsed: true,
+});
 
 const rootReducer = combineReducers({
   stateGame,
