@@ -1,0 +1,21 @@
+.game__block_order_variants {
+  @include width-height-margin-padding(100%, 5vw, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+
+  > div {
+    @include width-height-margin-padding(4vw, 4vw, .7%, 0);
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+      font-size: 2vw;
+    }
+  }
+}

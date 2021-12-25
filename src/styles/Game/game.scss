@@ -1,0 +1,39 @@
+* {
+  font-family: $fonts_1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.2vw;
+  color: $color;
+}
+.game_wrapper {
+  @include width-height-margin-padding(100%, 85vh, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  >*{
+    font-family: $fonts_1;
+  }
+}
+.game__name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.game__buttom_handler {
+  @include width-height-margin-padding(40%, 4vw, .5vw, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+  background: $color-yellow;
+  font-family: $fonts_1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.game__buttom_handler:hover {
+  box-shadow: $box-shadow-hover;
+}

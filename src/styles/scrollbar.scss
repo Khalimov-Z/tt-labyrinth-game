@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+  width: 12px;
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background: $background_wrapper;
+
+  @media screen and (max-width: 700px) {
+    width: 6px;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background: $background_wrapper;
+  border-radius: 10px;
+
+  @media screen and (max-width: 700px) {
+    width: 5px;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: $background_buttom_game;
+  border-radius: 10px;
+
+  @media screen and (max-width: 700px) {
+    width: 5px;
+  }
+}

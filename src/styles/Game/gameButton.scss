@@ -1,0 +1,29 @@
+.game__block_game_buttons {
+  @include width-height-margin-padding(auto, auto, 0 auto 3%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__block_buttom {
+  @include width-height-margin-padding(100%, auto, 0, 0);
+  display: flex;
+  flex-direction: row;
+}
+
+.game__block_buttom__buttom {
+  @include width-height-margin-padding(11vw, 11vw, 3px, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $background_buttom_game;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: $box-shadow;
+
+}
+.game__block_buttom__buttom:hover {
+  box-shadow: $box-shadow-hover;
+
+}

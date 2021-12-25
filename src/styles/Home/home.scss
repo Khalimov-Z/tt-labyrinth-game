@@ -1,0 +1,10 @@
+.homeWrapper {
+  @include width-height-margin-padding(50vw, auto, 1vh auto, 2%);
+  background: $background_wrapper;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

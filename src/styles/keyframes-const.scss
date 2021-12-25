@@ -1,0 +1,13 @@
+@keyframes hover-nav_header__icon {
+  0% {
+    transform: translate(2px,0);
+  }
+
+  50% {
+    transform: translate(-2px,0);
+  }
+
+  100% {
+    transform: translate(2px,0);
+  }
+}

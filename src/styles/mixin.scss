@@ -1,0 +1,32 @@
+@mixin box-all-body ($position: absolute, $top: 0, $right: 0, $bottom: 0, $left: 0) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+@mixin box-central-position($position: fixed, $left: 50%, $top: 50%, $translateX: -50%, $translateY: -50%) {
+  position: $position;
+  left: $left;
+  top: $top;
+  transform: translate($translateX, $translateY);
+}
+@mixin box-central-flex($display: flex, $height: 100%, $width: 100%, $justify-content: flex-start, $align-items: center) {
+  display: $display;
+  height: $height;
+  width: $width;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+@mixin tr-border($t: 1px, $r: 1px, $b: 1px, $l: 1px, $color: red) {
+  border-style: solid;
+  border-width: $t $r $b $l;
+  border-color: $color;
+}
+@mixin width-height-margin-padding($w: 100%, $h: 100%, $m:0, $p: 0) {
+  width: $w;
+  height: $h;
+  margin: $m;
+  padding: $p;
+}

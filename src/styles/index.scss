@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+input {
+  outline: none !important;
+}
+
+@import './const.scss';
+@import './mixin.scss';
+@import './keyframes-const.scss';
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background: none;
+}
+
+@import './Home/home.scss';
+@import './Game/game.scss';
+@import './Game/gameButton.scss';
+@import './Game/gameBlockOrderVariants.scss';
+@import './Game/gameBlockFinishGame.scss';
+
+@import './scrollbar.scss';
+
